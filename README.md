@@ -20,4 +20,20 @@ PROGRAM ErrorMetric:
   return AVG(all precision scores)
 ```
 
-#### Backtracking
+#### Backtesting
+Since there are only 31 years of modern MVPs, backtesting has helped doubly check whether the model is accurate or not. Instead of running this error metric solely on validation and test data, backtesting for the previous 26 years gives a better estimate of what the error is truly like.
+
+#### Random Forest Regression
+Although a linear regression was initally used, a random forest regression showed a much more improved error metric. Additionally, it also allowed for categorizing the Team and Position labels, since in a linear regression, they would be taken into account. 
+
+## Results
+The current model, which is still improving, shows an 85.4% success rate of identifying the top 5 players with the most MVP votes. The 2021-22 season was taken as testing data, and the orders can be seen in the table below.
+|     Predicted Rank    |      Actual Rank      |
+|:---------------------:|:---------------------:|
+| Devin Booker          | Nikola Jokic          |
+| Joel Embiid           | Joel Embiid           |
+| Ja Morant             | Giannis Antetokounmpo |
+| Nikola Jokic          | Devin Booker          |
+| Giannis Antetokounmpo | Luka Doncic           |
+Although the model identified 4 of the top 5, the order is still not perfect. This will constitute as the next steps as the chosen algorithms will aim to become better and better.
+
