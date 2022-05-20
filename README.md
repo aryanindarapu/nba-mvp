@@ -35,5 +35,6 @@ The current model, which is still improving, shows an 85.4% success rate of iden
 | Ja Morant             | Giannis Antetokounmpo |
 | Nikola Jokic          | Devin Booker          |
 | Giannis Antetokounmpo | Luka Doncic           |
+
 Although the model identified 4 of the top 5, the order is still not perfect. This will constitute as the next steps as the chosen algorithms will aim to become better and better.
 
