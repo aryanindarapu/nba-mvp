@@ -27,7 +27,20 @@ Since there are only 31 years of modern MVPs, backtesting has helped doubly chec
 Although a linear regression was initally used, a random forest regression showed a much more improved error metric. Additionally, it also allowed for categorizing the Team and Position labels, since in a linear regression, they would be taken into account. 
 
 ## Results
-The current model, which is still improving, shows an 85.4% success rate of identifying the top 5 players with the most MVP votes. The 2021-22 season was taken as testing data, and the orders can be seen in the table below.
+**Update: 5/22/22**
+The newewst model now shows an **92.5% success** rate of identifying the top 5 players with the most MVP votes. In this new model, advanced statistics were added as features for the model, and the number of estimators for the random forest regression was increased. The 2021-22 season was taken as testing data, and the orders can be seen in the table below.
+|     Predicted Rank    |      Actual Rank      |
+|:---------------------:|:---------------------:|
+| Nikola Jokic          | Nikola Jokic          |
+| Giannis Antetokounmpo | Joel Embiid           |
+| Joel Embiid           | Giannis Antetokounmpo |
+| Luka Doncic           | Devin Booker          |
+| LeBron James          | Luka Doncic           |
+
+Although the model identified 4 of the top 5, the order is still not perfect. 
+
+
+The current model, which is still improving, shows an **85.4%** success rate of identifying the top 5 players with the most MVP votes. The 2021-22 season was taken as testing data, and the orders can be seen in the table below.
 |     Predicted Rank    |      Actual Rank      |
 |:---------------------:|:---------------------:|
 | Devin Booker          | Nikola Jokic          |
@@ -37,4 +50,3 @@ The current model, which is still improving, shows an 85.4% success rate of iden
 | Giannis Antetokounmpo | Luka Doncic           |
 
 Although the model identified 4 of the top 5, the order is still not perfect. This will constitute as the next steps as the chosen algorithms will aim to become better and better.
-
